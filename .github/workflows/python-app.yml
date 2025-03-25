@@ -15,11 +15,11 @@ jobs:
     steps:
       # Step1: Checkout the code from repository 
       - name: Checkout code
-        uses: actions/checkout@v2 ## action to checkout the code - triggering an event to run the workflow
+        uses: actions/checkout@v3 ## action to checkout the code - triggering an event to run the workflow
 
       # Step2: Set up Python environment
       - name: Set up Python
-        uses: actions/setup-python@v2 ## action to setup python environment
+        uses: actions/setup-python@v4 ## action to setup python environment
         with:
           python-version: '3.8' ## python version to use
 
